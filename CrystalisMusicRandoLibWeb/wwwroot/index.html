@@ -10,7 +10,7 @@
     <form>
         <p>Base ROM: <input type="file" id="romPath" /></p>
 
-        <p>Seed: <input type="number" id="seed" min="-2147483648" max="2147483648" value="0" required /></p>
+        <p>Seed: <input type="number" id="seed" min="-2147483647" max="2147483647" value="0" required /></p>
 
         <p>Include Builtin Tracks: <input type="checkbox" id="includeBuiltin" checked /></p>
 
@@ -50,9 +50,9 @@
 
             const resJson = exports[config.mainAssemblyName].RandomizerInterfaceWeb.RandomizeRom(
                 new Uint8Array(srcRom),
-                [0x2b, 0x2c, 0x2d, 0x2e, 0x2f, 0x30, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37, 0x38, 0x39, 0x3a, 0x3b, 0x3c],
+                [0x2b, 0x2c, 0x2d, 0x2e, 0x2f, 0x30, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37, 0x38, 0x39, 0x3a, 0x3b, 0x3c], // banks available to hold music
                 seed,
-                8,
+                8, // number of retries
                 includeBuiltin,
                 includeStandardLibrary,
                 includeUnsafe,
@@ -76,11 +76,8 @@
             else
                 text = res.errorMessage;
 
-            // logging the result of Greet method call
             console.log(text);
 
-            // adding the result of Greet method call to the inner text of
-            // an element out id "out"
             outEl.innerText = text;
         }
 

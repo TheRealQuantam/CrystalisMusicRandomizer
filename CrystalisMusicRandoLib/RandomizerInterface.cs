@@ -35,14 +35,21 @@ public static class RandomizerInterface
             && (extraLibraries is null || extraLibraries.Count == 0))
             return (baseRom, freeBanks, "");
 
-        var patchedRom = new byte[0xa0010];
-        Array.Copy(baseRom, patchedRom, 0x3c010);
-        Array.Copy(
-            baseRom,
-            baseRom.Length - 0x24000,
-            patchedRom,
-            patchedRom.Length - 0x24000,
-            0x24000);
+        byte[] patchedRom;
+        if (baseRom.Length == 0x60010)
+        {
+            patchedRom = new byte[0xa0010];
+
+            Array.Copy(baseRom, patchedRom, 0x3c010);
+            Array.Copy(
+                baseRom,
+                baseRom.Length - 0x24000,
+                patchedRom,
+                patchedRom.Length - 0x24000,
+                0x24000);
+        }
+        else
+            patchedRom = baseRom.ToArray();
 
         byte[] patchData;
         using (var stream = OpenResource("Resources.crystalisft512kb.ips")!)
