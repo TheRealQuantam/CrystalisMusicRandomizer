@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Crystalis Music Randomizer</title>
+</head>
+<body>
+    <h1>Crystalis Music Randomizer</h1>
+
+    <form>
+        <p>Base ROM: <input type="file" id="romPath" /></p>
+
+        <p>Seed: <input type="number" id="seed" min="-2147483648" max="2147483648" value="0" required /></p>
+
+        <p>Include Builtin Tracks: <input type="checkbox" id="includeBuiltin" checked /></p>
+
+        <p>Include Standard Library Tracks: <input type="checkbox" id="includeStandardLibrary" checked /></p>
+
+        <p>Include Unsafe Tracks: <input type="checkbox" id="includeUnsafe" /></p>
+
+        <p><input type="button" id="generate" value="Generate ROM" /></p>
+    </form>
+
+    <div id="output"></div>
+
+    <script type="module">
+        // partly based on https://www.codeproject.com/Articles/5382292/Csharp-in-Browser-via-WebAssembly-without-Blazor
+
+        // note that it expects to load dotnet.js
+        // (and wasm files) from _framework folder
+        import { dotnet } from './_framework/dotnet.js'
+
+        async function onGenerateClicked() {
+            const outEl = document.getElementById("output");
+
+            const file = document.getElementById("romPath").files[0];
+            if (!file)
+                return;
+
+            const srcRom = await file.arrayBuffer();
+
+            const seed = parseInt(document.getElementById("seed").value);
+            const includeBuiltin = document.getElementById("includeBuiltin").checked;
+            const includeStandardLibrary = document.getElementById("includeStandardLibrary").checked;
+            const includeUnsafe = document.getElementById("includeUnsafe").checked;
+
+            //const text = exports[config.mainAssemblyName].RandomizerInterfaceWeb.TestInterop();
+
+            outEl.innerText = "Generating ROM...";
+
+            const resJson = exports[config.mainAssemblyName].RandomizerInterfaceWeb.RandomizeRom(
+                new Uint8Array(srcRom),
+                [0x2b, 0x2c, 0x2d, 0x2e, 0x2f, 0x30, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37, 0x38, 0x39, 0x3a, 0x3b, 0x3c],
+                seed,
+                8,
+                includeBuiltin,
+                includeStandardLibrary,
+                includeUnsafe,
+                null,
+            );
+            const res = JSON.parse(resJson);
+
+            let text;
+            if (!res.errorMessage) {
+                text = resJson;
+
+                const link = document.createElement("a");
+                link.href = `data:application/octet-stream;base64,${res.rom}`;
+                link.download = "out.nes";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+
+                text = `Successfully generated ROM. Remaining free banks: ${res.freeBanks}.\n\n${res.log}`;
+            }
+            else
+                text = res.errorMessage;
+
+            // logging the result of Greet method call
+            console.log(text);
+
+            // adding the result of Greet method call to the inner text of
+            // an element out id "out"
+            outEl.innerText = text;
+        }
+
+        const is_browser = typeof window != "undefined";
+        if (!is_browser) throw new Error(`Expected to be running in a browser`);
+
+        // get the objects needed to run exported C# code
+        const { getAssemblyExports, getConfig } =
+            await dotnet.create();
+
+        // config contains the web-site configurations
+        const config = getConfig();
+
+        // exports contain the methods exported by C#
+        const exports = await getAssemblyExports(config.mainAssemblyName);
+
+        document.getElementById("generate").addEventListener("click", onGenerateClicked);
+    </script>
+</body>
+</html>

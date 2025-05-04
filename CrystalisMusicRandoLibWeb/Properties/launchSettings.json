@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "CrystalisMusicRandoLib.Web": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:60814;http://localhost:60815"
+    }
+  }
+}
