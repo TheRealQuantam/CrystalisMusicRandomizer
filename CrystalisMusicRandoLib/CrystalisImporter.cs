@@ -87,7 +87,7 @@ internal class CrystalisImporter : Importer
         { "Draygon", [0xc] },
         { "Town", [0xd, 0x16] },
         { "Boss", [0x12] },
-        { "Ending", [0x1d] },
+        { "Ending", [0x1c] },
     };
     static Dictionary<string, int> NumUsesSongs = UseSongIndices.ToDictionary(kv => kv.Key, kv => kv.Value.Length);
 
