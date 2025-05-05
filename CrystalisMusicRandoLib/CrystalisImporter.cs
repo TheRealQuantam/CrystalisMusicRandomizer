@@ -121,12 +121,22 @@ internal class CrystalisImporter : Importer
         var selUsesSongs = SelectUsesSongs(
             usesSongs, NumUsesSongs, shuffler);
 
+        // Because of how Crystalis tracks loop and continue, the easiest way to handle built-in tracks is to not let them change track indices.
         Dictionary<int, ISong?> songMap = new();
         foreach (var (usage, songs) in selUsesSongs)
         {
+            foreach (var song in songs.Where(s => s.IsEngine("native")))
+                songMap[song.Number] = song;
+
             var songIdcs = UseSongIndices[usage];
-            for (int i = 0; i < songIdcs.Length; i++)
-                songMap[songIdcs[i]] = songs[i];
+            int idxIdx = 0;
+            foreach (var song in songs.Where(s => !s.IsEngine("native")))
+            {
+                while (songMap.ContainsKey(songIdcs[idxIdx]))
+                    idxIdx++;
+
+                songMap[songIdcs[idxIdx++]] = song;
+            }
         }
 
         var mapSongIdcs = songMap.Keys.ToList();
