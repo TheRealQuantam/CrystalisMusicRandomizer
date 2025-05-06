@@ -85,6 +85,7 @@ internal class CrystalisImporter : Importer
         { "Dungeon", [3, 7, 8, 0x11, 0x15, 0x17, 0x18, 0x19] },
         { "Ship", [6] },
         { "Draygon", [0xc] },
+        { "Mesia", [0x1b] },
         { "Town", [0xd, 0x16] },
         { "Boss", [0x12] },
         { "Ending", [0x1c] },
