@@ -22,13 +22,18 @@ internal class Program
                 ? int.Parse(args[argIdx++])
                 : new Random().Next();
 
+            bool includeDiverse = (argIdx < args.Length)
+                ? (int.Parse(args[argIdx++]) != 0)
+                : false;
+
             RandoLib.TestLibraries([]);
 
             var srcRom = File.ReadAllBytes(srcPath);
             var (tgtRom, freeBanks, logString) = RandoLib.RandomizeRom(
                 srcRom,
                 Enumerable.Range(0x2b, 0x3c - 0x2b).ToArray(),
-                0);
+                seed: seed,
+                includeDiverse: includeDiverse);
 
             string? dirPath = Path.GetDirectoryName(srcPath),
                 pathStem = Path.GetFileNameWithoutExtension(srcPath),

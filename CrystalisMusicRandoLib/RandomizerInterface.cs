@@ -1,4 +1,5 @@
 ﻿using FtRandoLib.Importer;
+using FtRandoLib.Library;
 using FtRandoLib.Utility;
 using Newtonsoft.Json;
 using System;
@@ -24,6 +25,7 @@ public static class RandomizerInterface
         int numRetries = 8,
         bool includeBuiltin = true,
         bool includeStandardLibrary = true,
+        bool includeDiverse = false,
         bool includeUnsafe = false,
         IReadOnlyList<string>? extraLibraries = null)
     {
@@ -64,10 +66,11 @@ public static class RandomizerInterface
         CrystalisImporter imptr = new(patchedRom, freeBanks);
         var allSongs = LoadSongs(
             imptr,
-            includeBuiltin,
-            includeStandardLibrary,
-            extraLibraries,
-            includeUnsafe);
+            includeBuiltin: includeBuiltin,
+            includeStandardLibrary: includeStandardLibrary,
+            extraLibraries: extraLibraries,
+            includeDiverse: includeDiverse,
+            includeUnsafe: includeUnsafe);
         var usesSongs = imptr.SplitSongsByUsage(allSongs);
 
         Random seedRnd = new Random(seed);
@@ -106,7 +109,13 @@ public static class RandomizerInterface
         CrystalisImporter imptr = new(dummyRom, [0]);
 
         var songs = LoadSongs(
-            imptr, false, true, extraLibraries, true, true);
+            imptr: imptr, 
+            includeBuiltin: false, 
+            includeStandardLibrary: true, 
+            extraLibraries: extraLibraries, 
+            includeDiverse: true, 
+            includeUnsafe: true, 
+            test: true);
         imptr.TestRebase(songs);
     }
 
@@ -154,6 +163,7 @@ public static class RandomizerInterface
         bool includeBuiltin,
         bool includeStandardLibrary,
         IReadOnlyList<string>? extraLibraries = null,
+        bool includeDiverse = false,
         bool includeUnsafe = false,
         bool test = false)
     {
@@ -161,7 +171,6 @@ public static class RandomizerInterface
         LibraryParserOptions parseOpts = new()
         {
             EnabledOnly = !test,
-            IgnoreExtraFields = test,
             SafeOnly = !includeUnsafe,
         };
 
@@ -177,17 +186,54 @@ public static class RandomizerInterface
                     jsonData = reader.ReadToEnd();
             }
 
-            songs.AddRange(
-                imptr.LoadFtJsonLibrarySongs(jsonData, parseOpts));
+            songs.AddRange(LoadLibrarySongs(
+                imptr, "standard library", jsonData, parseOpts, includeDiverse));
         }
 
         if (extraLibraries is not null)
         {
-            foreach (var libData in extraLibraries)
-                songs.AddRange(
-                    imptr.LoadFtJsonLibrarySongs(libData, parseOpts));
+            for (int i = 0; i < extraLibraries.Count; i++)
+                songs.AddRange(LoadLibrarySongs(
+                    imptr, 
+                    $"custom library {i + 1}",
+                    extraLibraries[i], 
+                    parseOpts, 
+                    includeDiverse));
         }
 
         return songs;
+    }
+
+    static IEnumerable<ISong> LoadLibrarySongs(
+        CrystalisImporter imptr,
+        string libraryName,
+        string libraryData,
+        LibraryParserOptions parseOptions,
+        bool includeDiverse)
+    {
+        try
+        {
+            var libEnum = imptr.LoadFtJsonLibrarySongs(libraryData, parseOptions);
+            return includeDiverse
+                ? libEnum
+                : libEnum.Where(s => !s.Tags.Contains("diverse"));
+        }
+        catch (ParsingError ex)
+        {
+            StringBuilder sb = new();
+            sb.AppendLine($"Error loading custom music from '{libraryName}'");
+
+            string? atStr = ex.AtString;
+            if (atStr is not null)
+                sb.AppendLine(atStr);
+
+            sb.AppendLine();
+
+            sb.AppendLine(ex.Message);
+            if (ex.Submessage is not null)
+                sb.AppendLine(ex.Submessage);
+
+            throw new Exception(sb.ToString(), ex);
+        }
     }
 }

@@ -16,6 +16,8 @@
 
         <p>Include Standard Library Tracks: <input type="checkbox" id="includeStandardLibrary" checked /></p>
 
+        <p>Include Diverse Tracks: <input type="checkbox" id="includeDiverse" checked /></p>
+
         <p>Include Unsafe Tracks: <input type="checkbox" id="includeUnsafe" /></p>
 
         <p><input type="button" id="generate" value="Generate ROM" /></p>
@@ -34,17 +36,28 @@
             const outEl = document.getElementById("output");
 
             const file = document.getElementById("romPath").files[0];
-            if (!file)
+            if (!file) {
+                outEl.innerText = "No ROM selected.";
+
                 return;
+            }
 
             const srcRom = await file.arrayBuffer();
 
             const seed = parseInt(document.getElementById("seed").value);
             const includeBuiltin = document.getElementById("includeBuiltin").checked;
             const includeStandardLibrary = document.getElementById("includeStandardLibrary").checked;
+            const includeDiverse = document.getElementById("includeDiverse").checked;
             const includeUnsafe = document.getElementById("includeUnsafe").checked;
 
             //const text = exports[config.mainAssemblyName].RandomizerInterfaceWeb.TestInterop();
+
+            let text = exports[config.mainAssemblyName].RandomizerInterfaceWeb.TestLibraries([]);
+            if (text != "") {
+                outEl.innerText = text;
+
+                return;
+            }
 
             outEl.innerText = "Generating ROM...";
 
@@ -55,12 +68,12 @@
                 8, // number of retries
                 includeBuiltin,
                 includeStandardLibrary,
+                includeDiverse,
                 includeUnsafe,
                 null,
             );
             const res = JSON.parse(resJson);
 
-            let text;
             if (!res.errorMessage) {
                 text = resJson;
 

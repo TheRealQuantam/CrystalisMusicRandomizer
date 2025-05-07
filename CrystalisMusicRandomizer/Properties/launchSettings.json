@@ -2,7 +2,7 @@
   "profiles": {
     "CrystalisMusicRandomizer": {
       "commandName": "Project",
-      "commandLineArgs": "\"Crystalis (USA).nes\" 0",
+      "commandLineArgs": "\"Crystalis (USA).nes\" 0 1",
       "workingDirectory": "$(ProjectDir)"
     }
   }

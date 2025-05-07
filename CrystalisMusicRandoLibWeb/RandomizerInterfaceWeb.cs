@@ -24,6 +24,7 @@ public static partial class RandomizerInterfaceWeb
         int numRetries = 8,
         bool includeBuiltin = true,
         bool includeStandardLibrary = true,
+        bool includeDiverse = false,
         bool includeUnsafe = false,
         string[]? extraLibraries = null)
     {
@@ -33,11 +34,12 @@ public static partial class RandomizerInterfaceWeb
                 baseRom,
                 freeBanks,
                 seed,
-                numRetries,
-                includeBuiltin,
-                includeStandardLibrary,
-                includeUnsafe,
-                extraLibraries);
+                numRetries: numRetries,
+                includeBuiltin: includeBuiltin,
+                includeStandardLibrary: includeStandardLibrary,
+                includeDiverse: includeDiverse,
+                includeUnsafe: includeUnsafe,
+                extraLibraries: extraLibraries);
 
             return RandoLib.CreateResultJson(rom, banksLeft.ToArray(), log);
         }
@@ -51,6 +53,21 @@ public static partial class RandomizerInterfaceWeb
             {
                 return _defaultErrorJson;
             }
+        }
+    }
+
+    [JSExport]
+    public static string TestLibraries(string[] extraLibraries)
+    {
+        try
+        {
+            RandoLib.TestLibraries(extraLibraries);
+
+            return "";
+        }
+        catch (Exception ex)
+        {
+            return ex.ToString();
         }
     }
 }
