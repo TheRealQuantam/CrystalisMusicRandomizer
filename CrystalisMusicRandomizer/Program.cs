@@ -42,6 +42,8 @@ internal class Program
 
             File.WriteAllBytes(tgtPath, tgtRom);
 
+            Console.WriteLine(logString);
+
             string json = RandoLib.CreateResultJson(
                 tgtRom, freeBanks.ToArray(), logString);
             Console.WriteLine(json);
