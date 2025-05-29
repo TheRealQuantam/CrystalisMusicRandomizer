@@ -64,8 +64,8 @@ internal class CrystalisImporter : Importer
     protected override IstringSet DefaultUses { get; } = ["Dungeon"];
     protected override bool DefaultStreamingSafe => true;
 
-    protected override int SongMapOffs => 0x32010 + 0x10;
-    protected override int SongModAddrTblOffs => 0x320b0 + 0x10;
+    protected override int SongMapOffs => 0x32020 + 0x10;
+    protected override int SongModAddrTblOffs => 0x320c0 + 0x10;
 
     const int _numSongs = 0x4f;
     const int NumBuiltinSongs = 0x20;
@@ -124,6 +124,7 @@ internal class CrystalisImporter : Importer
         "Activation",
         "Town 3",
         "Town 4",
+        "Boss 2",
     ];
     static Dictionary<string, int[]> UsesSongIndices = new()
     {
@@ -133,17 +134,16 @@ internal class CrystalisImporter : Importer
         { "Draygon", [0xc] },
         { "Mesia", [0x1b] },
         { "Town", [0xd, 0x16, 0x20, 0x21] },
-        { "Boss", [0x12, 0x14] },
+        { "Boss", [0x14, 0x12, 0x22] },
         { "Credits", [0x1c] },
     };
 
-    static readonly IstringDictionary<int> NumUsesSongs = new(UsesSongIndices.Select(
-        kv => new KeyValuePair<string, int>(kv.Key, kv.Value.Length)));
+    static readonly IstringDictionary<int> NumUsesSongs = new(UsesSongIndices.ToDictionary(kv => kv.Key, kv => kv.Value.Length));
 
     const int AreaTable16kBankIndex = 5;
     const int AreaTableAddress = 0x8300;
 
-    const int AreaMusicTableOffset = 0x32160;
+    const int AreaMusicTableOffset = 0x32160 + 0x10;
     const int AreaTableLength = 0x100;
 
     static readonly AreaTracksEntry[] RegionInfos = [
@@ -178,6 +178,9 @@ internal class CrystalisImporter : Importer
         new("Crypt", "Dungeon", [[0xa0, 0xa7]]),
         new("Tower", "Dungeon", [[0x59, 0x5e]]),
     ];
+
+    const int BossMusicTableOffset = 0x32260 + 0x10;
+    const int BossMusicTableLength = 7;
 
     public CrystalisImporter(byte[] rom, IReadOnlyList<int> freeBanks)
         : base(_bankLayouts, new SimpleRomAccess(rom))
@@ -232,6 +235,8 @@ internal class CrystalisImporter : Importer
         // Assign region tracks
         var rgnSongIdcs = CreateRegionSongMap(shuffler);
         AssignRegionSongs(rgnSongIdcs);
+
+        AssignBossSongs(shuffler);
 
         Log.WriteLine("Selected Songs:");
 
@@ -349,5 +354,21 @@ internal class CrystalisImporter : Importer
         }
 
         RomWriter.Write(AreaMusicTableOffset, areaSongMap, "Area Song Map");
+    }
+
+    void AssignBossSongs(IShuffler shuffler)
+    {
+        var songIdcs = UsesSongIndices["Boss"].Skip(1).ToArray();
+        int numBossSongs = songIdcs.Length;
+        int numReps = (BossMusicTableLength + numBossSongs - 1) / numBossSongs;
+        IList<int> selSongIdcs = Enumerable.Range(0, numReps)
+            .SelectMany(x => songIdcs)
+            .ToArray();
+        selSongIdcs = shuffler.Shuffle((IReadOnlyList<int>)selSongIdcs);
+
+        RomWriter.Write(
+            BossMusicTableOffset,
+            selSongIdcs.Take(BossMusicTableLength).Select(x => checked((byte)x)).ToArray(),
+            "Boss Song Map");
     }
 }
