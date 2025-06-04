@@ -133,7 +133,7 @@ internal class CrystalisImporter : Importer
         { "Sea", [6] },
         { "Draygon", [0xc] },
         { "Mesia", [0x1b] },
-        { "Town", [0xd, 0x16, 0x20, 0x21] },
+        { "Town", [/*0xd,*/ 0x16, 0x20, 0x21] },
         { "Boss", [0x14, 0x12, 0x22] },
         { "Credits", [0x1c] },
     };
@@ -167,7 +167,8 @@ internal class CrystalisImporter : Importer
         new("Swan", "Town", [[0x72, 0x74], [0xeb, 0xf2]]),
         new("Mt Hydra", "Dungeon", [[0x7c, 0x89]]),
         new("Styx", "Dungeon", [[0x88, 0x8b]]),
-        new("Shyron", "Town", [[0x8c], [0xf2, 0xf8]]),
+        // Do NOT randomize Shyron so players can use the music as a hint for which shops belong to Shyron when connections are randomized
+        //new("Shyron", "Town", [[0x8c], [0xf2, 0xf8]]),
         new("Goa", "Town", [[0x8e], [0xbb, 0xc0]]), // First index is normally overworld
         new("Desert", "Overworld", [[0x90], [0x92], [0x95, 0x99]]),
         new("Goa Fortress 1&2", "Dungeon", [[0xa8, 0xad]]),
@@ -176,7 +177,7 @@ internal class CrystalisImporter : Importer
         new("Sahara", "Town", [[0x93, 0x95], [0xf8, 0xfc]]),
         new("Pyramid", "Dungeon", [[0x9c, 0xa0]]),
         new("Crypt", "Dungeon", [[0xa0, 0xa7]]),
-        new("Tower", "Dungeon", [[0x59, 0x5e]]),
+        new("Tower", "Dungeon", [[0x58, 0x5e]]),
     ];
 
     const int BossMusicTableOffset = 0x32260 + 0x10;
