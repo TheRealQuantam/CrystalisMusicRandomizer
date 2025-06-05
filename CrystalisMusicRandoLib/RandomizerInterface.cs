@@ -18,6 +18,17 @@ public static class RandomizerInterface
         Formatting = Formatting.Indented,
     };
 
+    public static string GetBuildDate()
+    {
+        using (var stream = OpenResource("Resources.BuildDate.txt"))
+        {
+            Debug.Assert(stream is not null);
+
+            using (var reader = new StreamReader(stream))
+                return reader.ReadToEnd();
+        }
+    }
+
     public static (byte[] Rom, IEnumerable<int> FreeBanks, string Log) RandomizeRom(
         byte[] baseRom, 
         IReadOnlyList<int> freeBanks,

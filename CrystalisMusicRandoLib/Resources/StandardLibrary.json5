@@ -2547,6 +2547,57 @@
 			],
 		},
 		{
+			title: "Legend of Zelda",
+			author: "Kojo Kondo",
+			streaming_safe: false,
+			primary_square_chan: 1,
+			items: [
+				{
+					enabled: false,
+					title: "0 Title",
+					data: "deflate:pZZNiBxFFMerar76ke7smtowu2O2dz529s12T287H+nJZkgu0XMdJJ5lFQ+eBC8i0pHpJKeQixCFISzxoqAHwQ8EQbwEQY8Kigdxowe9JGqOiayvent6V53ZTeMrXvevqrve/83jdTF9Psd78WDzxz89Vt2tspJhAIBBViIrJlbQlte2OM84+5dxsl0yvV8cYfqdQrGYxE7DxpbTJgT7vxqH7T/s2RJ/nDe4y339xsk51mOK7i+zN9mHjOW/I7/PWMDP84Xf+Q3GXuAv8Vf5ZX6dv8Xf5u/zT/gX/Cv+Lf+R/8r/5A95UcyLilgVG+KCeEZsiefFi+IVcZVoS1wX74iPxDdEf4iF3GLu2dyWeDf3de6HmOr5p/IX85pu5j/PfxnTXMErPFnQdK3wQeF2TFbRK54rarpSvFX8OKa/igulfknTa6VJvJul90p78T4r3S59Hz+tGm3jjKHpdeOacSum34z7xoOYLsDT8M94zwHL7+z6aiRDx/EjD1wYX/KC/y4Nf95toIO+qmEL2b3L/MoNdo8thkNfhdKl4R9nUs9om+tGvvTUCq6hq1h+A9oUYUOFwR1b2lCGvWu6PLxTUTY20VG/jI2GJIfEU2bbP73BxvzhshzzZUg8ZVuOwC7rER0USJejMjBV2Z4VPDPz6Wlk5am5lqNTskGTRhOjFvjoDH2a+Z1ePwpU9qxrxDVIPGWHQp46qUdUkRWQMLmONMlKJKlgB7Sj/sxQY2OFeAUSP5KXJr+uFekslk7oEe2gDCWaaDatYHvHp4mDY8OmXTYk/gg8vQhIMiFiy2lHnkZ/r5jomb7ZsZg8UN9QBjIwB+amlbWis9jViq7r+Z2oa4Zm1+paI7Pjd8PItzzTM13TY0M1MsNwOIw2rYG1aYWUQIBZ6zo21ojXIPGU2bHQ9CzPcrWYdMEBffWoszz6aB3GMMC+7EMAAxXIvpwVZ2ysEq9C4kcyO+FAixqN9MBDUpKXWEd2oAensSu7QIqqL7tyHdflOmWVvbWbxE1IPGWGZ3AEAR1dTuLUZ45syzYdOL7syLqsQx1qsgY1qMoqVGFF6jJODzc2nEdswird67Dfx9Pajr6jSd8NVYjncb/hujQ/jedo+1kV4IBqE8qO2sCR+Vi5shw1rDUr+wdBZ42xDImnHOIQz1L4gITWlYO2ScOy1az3s+oOVKpwMP19qdlC2RJg2MM+iQ3QVi7dnzjkzMjWvQEl36UTcNKx8Ymk1nDSrezuVfo38Tc=",
+				},
+				{
+					title: "1 Overworld",
+					uses: ["Overworld"],
+					data: "deflate:rVLPa9RQEJ682WkWH2gFMYJut93sJt2k2TTpNmu76L+gCIIgiLDszZsnsURIbPUoqL0EvPrj6MmDWE/iwYNn8aDFf8BDb4V1XqLb3bX1B/o9vmHmZfLezLxvA67Der5g+vALeWIaNJiAxhgwZgezQFNTuq5PMYhRGgIVhACVI36DG3ATbqmDS0cAjrpwDuAu3AP9tdgEeARP4Dm8hDfwHj7AF9iF49olbU1LtKfaOw3EmlYX18RDsSMu4mV8jB9xR5wvXShtlJ6VlHeIarRKyntAb0l9/UrbA7uaoM1oxI20IWPZQF697YHP+75C7KW+jHUf89X7nJUHpsx0E4csT8ZzHM/hkONx79N9yGi3YmZaBYeksbgHV+5ocNXCGC20+PYELUYirLhWS2tUE7x+2L7PaR76eZqqOBF+7DjOd6YOOf2sXOUaqjjkT/GM3OMsZeVaf6ImRTlCYvZtislGm2dmUyJi2553FlJPub4fLLXTSHJhGGCotlzX84MEwzgMAz+MPc9zPbZuyjl8jnOMCy/+qkQUYQdXsHsywW63u9JZiTtpZERyfNhzxfBzjg65Wgw952ijlaLxnBbvW1iwgXmsWDR3UNP/vH9brG/ClkuucISynvClRy7xI4l5oSzvSRU3ZZOanLVAC6IlfAqoNf7uhaU2tUUkOkbEXkih4MhQXkCBWBLLxmmZiGhCD/y+dW6/jgWVZkfjOu475jGNN2Q+tpz1ibixn54Itv5YLeaybHNuYLTkgcowz8oz/G31v4qCq9VnsOCpYReLZigDvqvF9Yz6HbMrV9lXwtzzl2SiTuViWFyZ3sx0P9PDNCsvG1k5GrlgRl1g/FWyay4WEzEs+ccCMTsy4n9Cw5e/FAW82kCAbw==",
+				},
+				{
+					enabled: false,
+					title: "2 Ganon",
+					data: "deflate:nYoxLENRFIb//7ye9r14qerQNNLI0/DUa+mTGEQMhs6sZrNNwmBBDCJGMZrNJoPZZDAZTG1iMpgMJs+9Kp7cRCS+L+d+ybnnENs4+BSV8vVIvQLCgYbMEGURSr4fBIFvKBmKX6ilYLE38ge72AMKo8BYG+vAEU4RFXkO3OEBfTzjFe/wWWWDMVMus8c1bnCTW9zhPk94xgte8oo3vOU9H/nEF75RJJSyVM1rG35bc2qtO7WOG4fNdw2n1gmn1sg4bL5rOrVOOQ0llpYkPy6sHUll0dnlLsmKrP76+397Ah1kkfbNTGuikxprW5s6ox1t6Zx2Fd4s4c2bSQkmHtg1s+AdA/oB",
+				},
+				{
+					enabled: false,
+					title: "3 Triforce",
+					data: "deflate:a2IoZmgEQwYBvh3cEgIMjAxogBEI/gOBwn8FBnYODk5OTg4gYAcCNihgBQEWEACpYSIAyhmqGRhY+BkYBLUZ/BkYWhh6GJj+M05jYJjAMIthCcNehhsMT4HwOcM/BiHGpwxKjAz6D/9Ls4OggnsTq4KSimqzurs6uzrbw/9AEgh1gMI6egaGzcbuxuwgaKHGIN6k/+C/jo6WVrOGGtAkBmRV4vKs8tzyrCqpDApNrBZWNrbN9kA5dfU69WadVAYODX11fXVxVVZVblVW9VSGXR0MDM4A",
+				},
+				{
+					enabled: false,
+					title: "4 Fanfare",
+					data: "deflate:hcwxCsJAEAXQvyFxNgTWWGklaRaJBkLIQQTxJhYWViYWFhZWFm7rIbyEZ9BcwtJ1IkYxje/Dh4HPFFhg/QpCdQ4GIQRaBLMsshFISt/3JSPWefNqbq3eOH8ssQLcLtCbYApssINjxQHY44gTLrhjJr6Zi8rGaexxghFpGtPvlfQLL2JlpCqbpZnHCVJKKKfWxUPNSq0KuhmysSFtiDtpOm06b/r/pjTy89lIrfDAcAtcnw==",
+				},
+				{
+					enabled: false,
+					title: "5 Item",
+					data: "deflate:hc69DgFBGIXhd2TZmXwJq1Nu4yeWwZUIeykKhYooFKIUtVotezn2SsY3otJ43vYU58CG/SeydiW9DMMPo4LKQ05qrXPOqlS1vppREsVN448tO0g60C1YwpEzpjRXuHDjzoMnFXXwMpO5LHwd+jKQoYz8K4ylkIlMPWtWJ732Bg==",
+				},
+				{
+					title: "6 Ending",
+					uses: ["Credits"],
+					data: "deflate:jVJBaxNBFJ63u9lsbNDK8yCBSpTWcdtFs81u3CQb1i01eFvPepIKPSmIl15cIauCIHgQ6mEvRfAHFAQFj9WDF3tRsbfanLxYPYkgxDeTTUjTir7NTL6dffO973szn9hr9lE+bPLwq4njkwzYWABFj6LcK7OcrufzeZ0iR6ENQxWhKEzkKP8IkZM3jEKhYFDkM74BZ5/0f3g22Fv2jm0KidoRxo7OsYjm2+wpY5/ZNpv8DqtC/SE4BifgDMyDD224DFfgOtyEFejAI1iFNXhGo/+8GKI38CFDPwCUPjKVukTXlBvKHeU54Q3lvbKlgLoGXK2qgSrQsrqiPiS0rr5UN9RNufZTBW1CE6iqhRrIHZF2VVuWa4+1NW1doi3tq/ZLopM5NxfkQL2VY7sd3Okteq3wgnfJb7fCpI0dXGwFYbu10L7YCpIFeg/pe9DwA8pLQmRLHfySGr1yapxKjenUmEkNKzXKCf1RckbUJhJK7qBMEd/lPLMX04/TPpPysoILoSwi9s2mhi1T7L3YlHO/Hou6PbdpY4U7vINCZNL1mi463OdZ7XGdcp4e0cyWtp+wFH5PFVOYKtHgNAYYO9yN3TipNWsEG7EXJ42mL/Ud4EWKy7QSt40MR7j4XzDWeI3b0kXMA97iwkGV8HgXMucDB8IZVZnGHdexSxWnojtFRxd4x3PckuM4ulf09Qbhcb0HnInsxT24v8p23ch2qqUautxGL2o4finAFm8MXI87HT0h6briWKXZSAgROqqRlyk4QP++GzRqw41GPXhDVTWsD1UFGEb/uC1ualSI20XG61jHrmh3TCQ1WggxxK7oecx97DvMdsh5P6tJTBztpoXz3KITmrXOJudQnFiDu/RedWvJ+X334/TAbXnYO+KZoxO3uIlm0dTj4qxu0TAjj3jSu3YUS1/WaJ9oz0yRBnKdSIpcz+oMbwL79qDA2B8=",
+				},
+				{
+					title: "7 Final Dungeon",
+					data: "deflate:lZK/TsMwEMY/XxLqqBK0G6IlTdK0TR3+PUHExAqivEBnRgYGUCWSwsSIulTqzMzEwMYLMPAAVEI8A1u4JFQCIhXl58/S6c7257Mc4QxX2UBt9bG6XoPAHwSTMHZioyKlaZqSqTAr3xgpekq6hv7hHBeAvgbUAxwCY9xCP9EnwB1muMcDnvCCd4RiXxyIobgUIY9X8SE+s2gojuiUQvFM88SSLaNBzfqouojmiSc7hkMu5xZRRG9TmXSmspS85Yp5EgZj/XqCQe7vUbs6IosizbGbLathbcYbWn4NRX0ueVzqdd2O53jt2NYi+n1mu6TcovhWLhVfQMnA6JHPmUWUegclpZaLvRXlDnu0y+0qbndn298KeoGKu1m7Pzf0S8ovii19wvEN/9kv",
+				},
+				{
+					title: "8 Dungeon",
+					data: "deflate:hY+7SgNBFIb/M3uTCDF2ghGCoHubTJzswMKCD2DlC/gQgoWFILgTrSwldtbWNlr4FHkCrXyAYGWxntmNFjZ+HwyHwz9zztQ4w1UrBv2X9a0BCH8gpmFGzQhBGEZRFDIB4//iOYSAy4h/OMcF4G8AmzmOgRlu4e/05sAdHvCIJ7xigQ8s8Ykv9GmXllwf0BGdtNUpWbrn6pkXrem9mZhO5bSGXE8WnXmrzfHWyGjiFd7Uy9cwnPWu5xjWpMx4pWSthHuxyFamrE0JIosyMRZT0l4aAIYkGVxy8meKLKzksRxPdGesY6uBIEGMJJDCiIJi7CP2OdYuppXRuixLe9gO5Qt6T7muMZWt+GtSFDyyRpyrXGmljTZlVfKpFf8H2zec+QY=",
+				},
+			],
+		},
+		{
 			title: "Little Nemo",
 			author: "Junko Tamiya",
 			tags: ["diverse"],
@@ -7127,6 +7178,71 @@
 			],
 		},
 		{
+			title: "Super Mario Bros",
+			author: "Kojo Kondo",
+			tags: ["diverse"],
+			streaming_safe: false,
+			primary_square_chan: 1,
+			items: [
+				{
+					enabled: false,
+					title: "01 Game Over",
+					data: "deflate:K2FIZygGQwYBvh3cGv81GJhZWFnZ0AErGLCAATMzMxMTIwNILRORIJshlwEIBPkZrBkYyhjqGJiuMU5jYGhi6GGYxrCG4TjDTSR4m+Hhf02OOkFVIFYQ1FLWMtXkUOfQVGziePjfsK5Op66uWVNQj9uAW49bV1BfUFdQx/jBbI7/OlKzOTSlVIEa1ExVjRmudjAwXAUA",
+				},
+				{
+					enabled: false,
+					title: "02 Ending",
+					primary_square_chan: 0,
+					data: "deflate:jcs7DoJAGATgYReMyZ/4qLYlCoGFDdEQbLyL2FkYK40lBaiVNWfwBMYLGCtvYCGdB7BfkdLKb5opZjZYYN0Evc6FfO2Dm5bV+mU1zAbnnDED3y370xIr1PpdTIEtMrA5K4EcR5Q44YwrbrjjgVfd3qi04iFXXIqAQlJiTKBK22JAQ3KEpKd2yBU5eb50i4iQ7ti+RJq0E5ZTnExGRVx/clKBirwgK2TTpRcou3AJs4MBfAA=",
+				},
+				{
+					enabled: false,
+					title: "03 Game Complete",
+					data: "deflate:TYw9bgIxEIWffySTWCJQrUQTImQLO2aXJQhF1KlzkBwihd2kj5RmT5Ab5Bp7A7hIlhkkEG++p/H4jZ3wiOdzYTL+s3rQsPd3I+6StIADafqACqixgxzED7DHG96R8QsppNBiImbUa5HNcQhuzpSggsomkKJ/YkpUkW4iKS0XTEkqSX7TpkCUtvqsstmsIlE252HbJKJsx4fBNZ12plNOsbOh6UrxFHoKvWJz6G+gMHV6eXsonWpot5H4B5KpLde6x2hnuV57gLbon9Ze/NLj4wv4PgE=",
+				},
+				{
+					enabled: false,
+					title: "05 Level Complete",
+					primary_square_chan: 0,
+					data: "deflate:jYrNasJAFIXPJMYbENK6moU/VCQkSkIYkogS3PgyLoorpUsXmU0XXbuZFymUPorQLnwN452gm676Xc4M597vgC327eA5+OzFTQy343ndv3gtnRbXdR1HwLrOP3nFDkz/CRXwhiOcRpyAGh844RsXDMRAjEQkUv7Xoqbf5iWcJarUS1nKmiZhnKpCr2TBZRrNs3yhqwBkxZE1tZIJn45Da3JJbRlbU+cB5I+hJiRDM05CpTS+ygzZTcxJqbhvIm5zTkaLAFf4Fdkpz/BzuebXUE6PqDM278DXDQ==",
+				},
+				{
+					enabled: false,
+					title: "06 Hurry",
+					data: "deflate:jYotaEJhFIbfc797RPzmb1pRYenO6fX6i6DeYFpaWFoyCYIyGGwsms0LK1s2G8W8bF6c5uUl4Xo80SB7Xzg8z8t5wRjPWmRSK+tFHozLHDsNa1yNMcZxCMdf55+Z4hGSbBpd4BUzJHL0DrzhEwssscYXNvjGDr/4wx4uXUhTlKNLpQJdkafkU506SiEN6Fbpju7pQWlII5oonesTbaM8V+w2uuYGz/gnCvgj3rPIVmRt6NbTpcC+LXFTvCbet754U72vXuSqveGWeF08tFXxlnqoHggF3JbbFi/bMsPMgeQB",
+				},
+				{
+					title: "07 Overworld",
+					uses: ["Overworld", "Dungeon"],
+					data: "deflate:xZXNa9RAFMBf3uzbnTa1taAtVBaqsMbszqYJ28S1UA+iIPgPeFLRq7dFPQmlqxaUWkHtJeBR7Enw5EFBELwI4sWDgtAePOjNm4hQ32Sz3e1mu2ntqkle5s2bj8z7vZmXabCgEt2wd/i5KdclyFyWKJMBrWN8laAMfI2OwAGAAI7DnnsDywBn4SJchqswB7fhATyCJ/AMXsAbeA+f4Bv8gDHjhHHauGY8NggfYogfcEQQ1sQVsSI+R5qXOZ9ZzGjtS2Y/naJFqgnK+tlL2dfZmjiTu557mhuTNbEs38qf8sJATbwa+D5waFBrdwZfDn4dPGbWxIr50cwNnRtq9Xs3tLZegpLBN79doepr6z74hm94/K4urIZy3YJQWkYssV4VoVT11fsQ0q+8ERp5VtpKyuNGvSFzMLxgwJwtC3JSFsiiw1igglDCFR456JJDNhZxXlp2YbLe7OBJJW3pkEtT6JASvqiKGQqwSj55WOHurqfserMDr0mGPCDkr4SyqOssJWzoNq/ZY/FZAq5X2O5z6bE4rLs8HY+IHpunqCemMPax5AWLdrGl/yf7DXFzGZaSEK1hH6eZjkteVFdUQC5lyxoww8BM8nSHq3gUA5zmehkd1LOyXbasszSLs+Z2YDaCoQOhS20v6hJjnRptOlgqtp3Ugo1SESwBdfejzDPZ+a5tCNTdg2lZkV6+axumrJKlzLYpbY9Xq2L71uPa1x7RHu3hy3j7qiPCoz28GE8j96f+lLFMfOMUKbR5lQVzw4JqItnq8bo8vW/YV71C1bKgP5FsDeVB/t4RljK1dsck7djeOAO4qaS83Kg3pc/9SlgivvntmspMS2UWnzc/Olc+VcfTMpnLnlkcCYtiifUqU9PkdpfYovHbpfGXs1Y6N48J2dKmot5BWDTT2ekdpniXOKjPmtMfXtHYEs5T9EfweCw/9fgw/aMfAoenFTLqrM8LFQSBX6lrYkW0zU5yik9fBSvCY8bNUzsv3JmZmWpQbx7LTnhuVAaMmQdysrE0wiYGt/GHbMPQzDe9SUVAo1TD0B0WVzSAR8PNNE93W+8Ek0quE0oqtW1B6AfKbjHtnbk3B7R31k4N1E5zdVqg+pyjkyQ2Z+1EbknQaM/aySBv5X2v3J2+Mfr9Q0uBDndvIcBv",
+				},
+				{
+					title: "08 Underwater",
+					data: "deflate:pZCxatxAEIb/2b2xlwjspExxEGPpZOkW3eoUKcbuTJ7ALxGIcZVgV1YhOW7SBAJXeNurU4a8Qpo8g/MCSR4gcF6tLLCNC5PMsPAxu2i+X+/xBu984+nGt2BntQM5Yl67X+xr5EtKKQSheyseWUc4hqtnm9gHTlBjZNQCuMAnXGKJL/iO39iiUzqjj7SkP3QgXotD8VZ09FX8EL8cvZIN/VzFkyiMJg3iOK6Tuk1Z85R14K+Sqc5mDYwxtalbIzWV/JLLtQY6M3lbAJtXVq00aW7IqsgqbVVuVejB3JokDlpHBLr6DEt/x2R5LC2N4U/P/zqjc/VhgZkzlxnpIOWE08CpyorKJxoFz7kYpOd4hKqHeLiaWDW1anZrEvZxjIvzH9oPRsEs5dDHKNmJBwXrmxi77Jv2UNOuT3HH526KFwP0k3J4U1i17WHuc3UpSup+UB5EnJImQwauRYqEq77dtpoqlJy5W+cC18Ig5xuHzKrKf62HaIB+o4Png0Nv5Zaup+hOKux6iIiRXRBwDQ==",
+				},
+				{
+					enabled: false,
+					title: "09 Underground",
+					data: "deflate:bU67bsJAEJw72zASUh4SnRHCNuYuRjZCIEoKamrEx0CKc5JPoNkfycekSPIjzmFFMgW72tVodnZn1zBYtYmnh88BG4L9XhSFIa5Y/8ccJXw8PyIGNthCvwYXYIc9DjjC+f7l6xehOmCrcHb6p8mXaZXVi6HTHRoXsRnVtkPa6W9hkwuXwlRYCbNaeNUK77NjYSGMhUY48qy9z+q34P2CMwZWGTVTLsqtSSYzp/J58bKoXFDaaZbWiekUraNtTyTCifBGLSzb2dS/4n/yDn7z9KGAPw==",
+				},
+				{
+					enabled: false,
+					title: "10 Castle",
+					data: "deflate:XY+xTsMwFEVPoKkjIZEyI1G2Nk0cN3YSNiZmZmY+g7Fu+YTOHaNOjHwB30HXTv2DYJsMhWcd3XuHd/VcM8OEx+T68yrpExIxjuPRCO8vhsmRuLlJuYWWRy7v4y088cwLr7yxo2PPB18cnes4MY4WUYeOYBUdeqMrbWqjB7WaFYe+UEVZSIcqlsH/zbbku5+nM5ELput4s2Xq23xFKPpVW7muvMylQw3If9lKFmkmlPD77UPbtE3dDGobt6+Mqh06UAU9z/5eUWZzmwnu3t2ffgA=",
+				},
+				{
+					enabled: false,
+					title: "11 Invincibility",
+					data: "deflate:RYwhTwNBEIXfDJ12wpICDUFAmiBoLrcczS1HqggKjUaj0cgGAQgspGYTFAqFRKJQCCSyTQgKwQ9ocswWAvPyNptv3rxdZKhmwlL70Wmt0FZTpNFA+vPvbGEbNsuLWAcG2Icu8Ag4xBGOcYJTnOEKN7jFHe7xgCc84wWveMM7PvBp75d5CqYmJdamDq1SYmu0QZszVtAO/eQGtt0zdkCT2ouXSR0kyDhqnbnxNSJNVyRSd85M53wxgvOSseeggaP2NWrFUbp/GThwSgwtEen/1rNdSeq2K3Mluak0Re25XHqcc6mldRbWGRic2NBYzrazVGEOgvlLAr4B",
+				},
+				{
+					enabled: false,
+					title: "12 Going Down",
+					data: "deflate:dZCxS8NgEMV/V5r4SqVWKCItcXAw0kSo1pZM/VM6d3Z2Lo6C4OC3dnbu3NnZOV2dOxbjl2JFIt7j7h6/NxzcLTHDnWi3lk0VQgdhENTrlL72XQlX+Do+ogdjJrQb9gxTZtxxz5xHXljwypIVb7yT88GGT2oW2qF17MROrev3Xmc/7PwXLdmFZ/+ll9a3tMKqKtOB75vKtb9ubOsi0boYKXcqYuVPuGAb+Q8kGskplrNILoh0rYEyTzKlfqYifAD7Ag==",
+				},
+			],
+		},
+		{
 			title: "Tecmo Bowl",
 			author: "Keiji Yamagishi",
 			tags: ["diverse"],
@@ -7825,6 +7941,96 @@
 					enabled: false,
 					title: "15 Boss Card Use",
 					data: "deflate:Tcs5DoJgEIbh90fAP0hcamME0cIVLaw0lsbaI+FS2Imlieewt/YOLhewpMORUJjJM99kMjOnyywrquVrSacGFUdr2zZNK5ttE5UCIROmkqgK1Oq0YcES5bofWLHmwI07byKeJyO+FJO+GIihGIlQjMUkzzDfDze/w+xPHSOZm8ITvmiJQLRFJ88g3/u/R49HfA561jnoWq/4Ukga/DWdNPTW3X1w9gq+",
+				},
+			],
+		},
+		{
+			title: "Zelda II The Adventure of Link",
+			author: "Akito Nakatsuka",
+			streaming_safe: false,
+			primary_square_chan: 1,
+			items: [
+				{
+					enabled: false,
+					title: "00 Title",
+					data: "deflate:tVK/TxRBFJ43b0dv5eJdTIwUJ3c5D/e4nezeZQlZztsAYkmMJQUFobKg01iRaG7VgooEQwibGEsLKysKTSxtTPwDNMFQoJ3A8fvH+WZv0AMhwcJv37fz7cu8782PXWPLbDV+WPryYsd4c5wlCR2ESxqmRkLjosYFDaFhaKAG1wANppFgDFT+kKD68f+MFfZDtb2aYg/YY8YabJ+lc4k5xjJwE8pQhTtwF0ZhAibhETyBaXgBL+E1vIV3sAJprp4r3OctNcbv84c0TvMZPs9fxblF/oF/jNUX/l3nGpxhEiWm+ShO4CTOkHqPn/ArCiPN+4xh454xZRzlpo7l3hifjWXjmlBqRCwbY+Io11IzcW5eMFaHpVm+wH8Gq7VVf81bC9Zr637DawQbtQ1/09sMtmpbfrjtnXsisKxy3Q52ajv+rrcb7NX2/H1vPzioHfiH3mHQrDX9sOmdZw58W2DNsimxDE5Kac8soweV1FI00pRmlLEwSkqIxkodSj9NPJtjWWkWUYKdcqnOpbpIFkUkpYgyLkbSIW0LNbtMXsrXM33sg75UNPK3oyQP8hK2sLDXdLEXPOEIG33hE/tFP/aLATGAA2JQDOKgoFrylhhT+Zz4XpplEW53YoSdQERNODHGuiqqWBW3RGAOiSEcErfFsHm6v1qzRdomOqd6HRuNvesQGS0y7EELCljAnMjTm2GFDkWihQXRTe/fjeKm1h+tGmZKlOtp6RO7gjaemq9jPp/vCguQx5xZx1KP1R1a0I0FM7ZNlrS9Q7rS1lKP8d6tM93P7Mpu5Iq5duazVraNIf28WIQSSFqh69heaIODdWpWbAsZhxuHFYcdhxOHHaqroBo6aDrjc0bYuo5Wb5euwUXHVCb/6lERVC28FOt6joz9Ag==",
+				},
+				{
+					title: "01 Overworld",
+					uses: ["Overworld"],
+					data: "deflate:rVM9bxQxEJ313OYsWQqIXJIKsXfLZrPG2Flt9hSFkh9Ah0SDEFGkCCQKfsIuIaKJBERpFqgpqIGKpKamooCkQ5Q0NCjH2HfZ3AdE4uPNPvvN2L4b2+MnUMJjZ3B2+q1Y6i0BJzQdphx8h4YDOjAHzwGAA3jWPyLY9ewPsQWPgDB7Bq7CNYAdeAZ8n+0CvILXsA/v4QN8gi/wDX7AjKe8e962t+O98T5602zbk2yDvWAMb+Ox2sA7+Bz30apO43qjaFj1tXHUOOdbdd9/6X/2Z6duTB32OhcK7BDKoBlgME/EYO2wJyksCaVsLqKckehs7aDiPSmqpsSafNxfJH8Ra476a4U4eAoVfp+rcPwriXfh5pYHt9rNNrZnCmwTyrZ/npGNtuv9xI6z9CNGNtquV3yB/nsBa074kThh7Fc8WS/EZGLHuUUixggvYsTp9zFGjZLHbJhuZD5Fa1qM9YFmGg2pZS5ZRkyJhqi5Ynq+i9ZSMdqPny/lxzUFK26GPllO3skq1uTd032cs7vGIYoh/nP8AdvchT3YC0WEIXYwpFOKuWGFyNJMl4q2L1uSxVRiBjUvmNaXtSm1kELRoRme0dQrqyvdcpkvs6xlmD3FDDMaSMOKK9qNwprWr2OXBjFNviGt0fU8ozlmEJOjMS7pTtwKnlpP/C5vdNZKWIFJkgRBUAatgLknhGOJ55RujmlL0VylVBInZdSyVWTt73dAddtMBm8rGawz/bxH5iZubieMRWyrNDxRMjTC0J70kJp801LU/A/xAmNlMqP6bcGodaZM38bGRWpUmdAqcrsUcO0KnepKN+/mWZ4Nx8ucd+lx5fS4MrqAlC5ShYbajP9aRTwhlVANUtRpQ9dMZRsSbc9P0XxIT/Tw7iEC/AQ=",
+				},
+				{
+					title: "02 Battle",
+					data: "deflate:zVRNS+RAEH1VnTiRxY+L4l2GCemejk2cCPsTxJsH2eMuy57Ek2eRiYpnBS8Rf4eIP8XD7K/Ym7PVPUOczaLLKi5blUrVq64k9HtNvmAXn4NjefH2w9p4DZGYCsbBKBiQAOTxo5if42dsD58gtrIEjS3gK/YRbcxfAYc4wjkucI17POBAXpZwxtt8x9tqR31Tx8pXI7UQfYxuopV4yN/HPWNM1aMeDTmURnXlGfG4C79uCpdXljJZN+XAVYXK2HHONjI0qpOxoTopUCdNRgu/sZ8JdrMZLfxLf3SJWv1YpVqtStFktPA/7Z/Mn14hB7ps2ZL13GI9TinllA2lUvW5z44y3uSCArfSzcjIfE79OJdewZv0t1zUSUoTHnOuE/98G/clun6OJ3ULq/+LR+SW9ZyV0+fzgAf8xGLBds55/iSXXPITf3XSk9CyKyu7cq/AL7OYxUY0zUU/TRohMM00hNbaVY6CQ3dsI6YIjRCYZhl2hSurkoKj6Ez0tF5L+VJJv+M/7gSTXhMzeDr3DpoN/b25qunS7HHqwJ7J/+4n",
+				},
+				{
+					enabled: false,
+					title: "03 Item Acquired",
+					data: "deflate:m8TQzDARDBkE+HZwG/w3YOAAAnYwYAMDVjBgAQNmMGACA0YwYGDgYGBgBPH/AQFIPxOJoJ2hkwEIRPkZnBn8GRimMMxh4OVhnMbAsI3hAMMphisM9xheMHxi+MPAxijAKMWowqjHaMFow+jA6AaEHoxejD5gVgCQHQRmeTGGMUaAWTFAdhyYlQRkQ2RTGNMYM8As8mEO48P/+twP/xtzP5jN8d+Mm4Fbi1ufezaHMbc6kNTnNgGSFtw6QNKEW4PbmNsMyLLmZuDsAAYVAA==",
+				},
+				{
+					title: "04 Town",
+					uses: ["Town"],
+					data: "deflate:lVQ7jN5EEJ71W4I5cicREIsQB/ll1lr77HNs//qVIgJZQgiJSKFEFFTQkCIFEYLGJgmvglciIqdHoqDlhwKloKBASECDBDpyKVIlKB2IgmN21875ty48xjs7syvvzH7z2A+ghff1B4fWlneleykERL4mT5OrydFka7I0MU0AAQBT67+I1Hnrf9J5eAuI7r0HnoBnAD6Cy7D+29pFgK/gG/gBfoHrcAv+BIetsfvZI0yykh1nT7Fn2fPsRXaGvcmW7Et2hf3IrrMHrG1rbh23nrRetZbsXauzPrV2SLtlefaD9gl7yV6wT9mv2Z+RdsX+1v7JvttZsocc6Sycl0lrnPecj52vSdtx/nACV7pLdsJ9yT3tXiDtc/d7d9e1vSWbeQvvae8V0i54n3hfeD+TdtNj/n3+km4T+4/7z2ntjP+2f9n/zj8U7O7NbAnSCkF90bXdPWHnkFkRSEhAXmvgahfszbog7ILHukB0Qd52QWbRBnRBRJwQS9YFKcn8V7gJa+cZ7ABPUGKEDRdErRARAi+xwJy2MpmkbSYK7IIZp9MkBckMe31lv6E5owXp5DnEqx9CZ/9++GRnH+bEg8Q32NmL5L1KMMHoElTKWXIJ6HRCHJG9fNCJQ37wfsShnljmCWFJRMNTolaKjOdY0HJeFnlbCHPvhOyU2OsKR283JTnHXu9xpgjVxIfYVj4wIdMlzilQeaXi14eM5gUe4wuca1TG2zbJovc2oJHceBm83Y4igph4rMa5qcdZqQHvlIvV/f0YAp9Yr00WYh5hjCYTGY8xw/+aBeMp1pLus2r9JPCGyzDNZStQVmqVzvOyaCVm1X4exjlQsuy9j/FI8+/EvqoneCek+l1wPSPQ/VPMhDkxtrDVR0PJsDYYDOt7346IsjkwoLJ6jJv5CArKuZlTynuqeqcWXKLOaW1uPbCoVUekZrTa18S6WjdqNqNVe42qneJo3mZ8BItmeN0ASzkVpS6ogVfBqHDqsl1xM1nzg0HNsUL1IIyACRBTWKZkB9Z//LM30aCClIVR0oaEWBx5mOoBavPMlLQjI9GqLlIRK4YRmqEeEx1KYUar24RPffR+9V2gUtgSDOsIZ7iJGUWEmpIKfFHH+rnLdBRDHHHdl/T+A1NN7HIgJI+GkR6bMxot5UVskbWj1PwZgYlxi54Gsk433VKRIy6p+GL1/NDpzdnK+bDdRDqOB5lQdZrzg8yoRMwwpAQSi3BDbqTreUVWuDobC1pv5OvzCvoOHTo1EtJTZ9Uc4lg3XZLvd/BYDuz9izQdc+OcBfA3",
+				},
+				{
+					title: "05 House",
+					uses: ["Town"],
+					data: "deflate:lc87CsJAEAbgf+MTJBoXhEAaEYMYgqyERLCV1N4pvrBUxCYW1tYWnsEjWGi8g1iJcTKtNn4zs8MuzMCuMcGKA0b1VFGpQpmUWJEVWJ7lmMYEA8qAyO5vks1rf1pgCdKoYYQxsMEOWiK2wB4HHHHGBQ888YIhWuKBoYj0e9psdzhbtpPlxKY3FfYtTw8GvgykX09iM3W7sdmhcq3YdKjbVI6F21TMtrhF+vcWL1SWq/ekkv26Lz06afr3luucPv8B",
+				},
+				{
+					enabled: false,
+					title: "06 Learn Technique",
+					data: "deflate:lcw7DgFRFMbx/x2vm5wEjSV4xPNag3YSS2HWoEBJRDOiVqsU1iCWYDbiOnN24PflK05xviMbDhbazYeEGPCqYeqmZqqmYhLjDHhw5f1V5X/ypy17VKfFgiWcuOAyd4YrN+48efGmiF3pSV8GaRGnMpMg8/ST+ziU3I+0Y+0kZc1qp1s/",
+				},
+				{
+					title: "07 Palace",
+					data: "deflate:tVS9b9NAFH93zostrmqxBGUyhKSR4/grxm4Uqd2QutKRsX8CMDHbQMVWPtQBVxETA1O7VSBRBiYGxMjYMjAxMPCxUd5dkrqisdoU+u59/N7vbN+7dyc/hgweqQHnp7dFZ78DBomupKoElVSUaEq4EqYEwABgMv9NIt/nE8oqPASSizNwHW4APIUNmHk7tQ7wCt7BB/gEn+Er/KRFzrEL7DJrsWtskS2xZbbCbrE+e85esPfsC1viL/kAbfI+O6/NaT3trkbz2rb2UZuq9FkxW6DFykplrfKNZpfxDj7DH9hnfvV2da36vdpnN/UN/bUu0Tju6BpXjL19G2xGg7e5w1tbe/seeIwGD3nA/a3d3CAmNzw2NJ5SFo40GKmfkW3CDkyvMthM0W7UlLYaNaVOo6Z0mGcN9KwAQ4wxMUMzEfPk50UietgViUnriNywsYghFnnrUJT8KHcORck7pc/vPoFc+zUrcm0WyUYR/8r/ib/H76/Dzv/6WhnvoitooLtQoBhjQQOjA5QsDLpni6FJfGmAXbJAHDtfrD3CC+O4MfVYrumKozV1rcSMxSnqsmjOnKAmi8yUeYpus650FK8220qHMWtihPJWRiLEQATUXY+iRzvp0gz1Ue5AROirZ2Q+qCkgc4d1RljUPY5v4wD7ZO0h75fzZ3BnDvNHe1LP6qJu1ZG8sOn8yjpioy1alvSuCESEk3dC5q466VSiA80G9OgS2HiKzYbSUl5r2F7o0Z+oJNKp+5HfbpbErMljS2491YMwipNuRreWzj3Vk5jSrKvLyj2qUfnwZLidG03l/WOx/KtiKjd1dprJtlGr5hyv4zlzZfH4VvUsj25IqneieL7bG9sqJzc6ynsnw5O2Ct484AB/AA==",
+				},
+				{
+					title: "08 Boss",
+					uses: ["Boss"],
+					data: "deflate:ldA9CsJAEAXgN+NfiKA2NkGMKNGwGhJbWw8geCR/sVQklYW1tYWn8Aym8xSumyFFrILfMm/eFtvsCWsc5aDVeNQjHcEyaqIqKqIsSoIFCcACKL1/jPQ9/2mPA4x2E3MsgDMu4J4dA1fccMcTbzjUoT7NaEkOrSjRHvs8IiWZ74lWHPCEQsl8f2lFU8gg2wUd7sbexnAHPGSPfMl893nMigLJn04hZJDtgo7uznziFw==",
+				},
+				{
+					enabled: false,
+					title: "09 Item Acquired",
+					data: "deflate:m8TQzDARDBkE+HZwG/w3YOAAAnYwYAMDVjBgAQNmMGACA0YwYGDgYGBgBPH/AQFIPxOJoJ2hkwEIRPkZnBn8GRimMMxh4OVhnMbAsI3hAMMphisM9xheMHxi+MPAxijAKMWowqjHaMFow+jA6AaEHoxejD5gVgCQHQRmeTGGMUaAWTFAdhyYlQRkQ2RTGNMYM8As8mEO48P/+twP/xtzP5jN8d+Mm4Fbi1ufezaHMbc6kNTnNgGSFtw6QNKEW4PbmNsMyLLmZuDsAAYVAA==",
+				},
+				{
+					enabled: false,
+					title: "10 Palace Complete",
+					data: "deflate:lc69CsJADAfw/1WjB4XTDtK1UEppKVxLwRdwFPGd7KCOirjUwdnZwTfwGdzsi/SMN/ixCP5CIOGScFtU2NjAUF3c3OSQrG/1LLK6VsdyLGEBEhDPvmXPfedPS6zBRgNMMAd2OMAxYg8cccIZN7SYinfMRGOSMKaEYj/1UvqsM39BAasC1Zgi1FSQ9kuvpK+ahyJWRepeSxO5tcw4E5f3qZYp1zGn9jR3v19fp3hQ8T/HK+D6AA==",
+				},
+				{
+					title: "11 Great Palace",
+					data: "deflate:pVE9T8JQFD33FrVGgkCig4OooWlaSm3DZ4wJUQdH/wWL/4KqqHHxIyz1Bzg7OTg7OxrjAIn/wcEEvH10QBMJ4mlP3zn3tn33vnuFAJfqQjr1sOANPOiCOYVZhRmFhIKmwAqkAOgARb4viL7nP6KNMwiWFrGHA+AGt5hdS3aAO9zjEU94xive8YksNWiH9umQTumFkjxUWW7QLjf5gr+rN+7zitbUzrXewCITFuWpBdMwjMAUa2Z6A5ccuGRJ2LEdN/DIhZPphrokQt1BqEdrlBYX6vbwDsTEaSeDHFJtQrqFDcNyhUWhIyz88EFBTsmVX3l+qRJs8xZXqM41LlGVK+xTvFe8pz+ip4t1rxFqH8scaooUr2P1UfK4g9wkb47qFtYN0x7DwJbWi+RDetXK0m8dVZRRpbJEhIgyPjalbltoYLgWR/R0sd+Hkg8MMsliX8ZfSUTPOtViZ8GWaj3+30SskUo8nuAc57F6wsAX",
+				},
+				{
+					enabled: false,
+					title: "12 Ending",
+					data: "deflate:S2IIZkgEQwYBvh3cEv8lGFiAgBkMmMCAEQwYGDgYGBhB/H9AAFLHhAOEM0QyAIEoP4M2gzkDQwpDDoMAE9c0BoYehmkMCxhWMWxh2MdwguESwx2GZwwfGH4xsDDyMUowKjHqMBowmjBaMdowOjG6AGkQdGP0gLK8GH0Y/cAsZFkruKwVXBYmFsQYwhgGZkXBdcTAzQsCmocpi9BrBZeFiMQxPvyvBcTGjA9mcwBZDIwtXK3TGBj1GE0ZDRktGLUYzRhnc2gxajIaA2lNsG8YGNqAGAA=",
+				},
+				{
+					title: "13 Credits",
+					uses: ["Credits"],
+					data: "deflate:lZK9S8NQFMXvfdFnij51qKXwHFKahPaRNI1LwFE3F4fu/hlOnRo/0E0rRah/gTiLg4Ozs3M/Nofi4CKIGG+eLRji0t95B+47yc1ZcgkxXGjB+urDcjNpgkksabhmUbOgMTRMgxoAEwDT+zeR7rM5OYUzIDbWYBf2Aa7gBswR9gDu4B6e4BleYACv8A5fsIKbuIOH2MZzvMZHnOAbfiJn2UmxbbbHDtgE26w7nfLZLRsnTsuRbtHlbuQKV4yTRqshg2LAgygUgRj1y4mSyiQV+mUlZ84moy70jY+S7Bslc+oCWf5xLj/C4x4Ms+3Z7nzPP4kxXysMq1FHVqu2bce29Gj2A99TcY2+VpM1k1RIp5mzSSWqyIq0inXuRUp4QkV1qWS96PEwCkQoOsL1f+V4WrEnQHTS5vyJyfRMEbEjLG7xjrBSYovirTDwadvhDsVOCr0EgxP62X4A",
+				},
+				{
+					enabled: false,
+					title: "14 Item Acquired",
+					data: "deflate:m8TQzDARDBkE+HZwG/w3YOAAAnYwYAMDVjBgAQNmMGACA0YwYGDgYGBgBPH/AQFIPxOJoJ2hkwEIRPkZnBn8GRimMMxh4OVhnMbAsI3hAMMphisM9xheMHxi+MPAxijAKMWowqjHaMFow+jA6AaEHoxejD5gVgCQHQRmeTGGMUaAWTFAdhyYlQRkQ2RTGNMYM8As8mEO48P/+twP/xtzP5jN8d+Mm4Fbi1ufezaHMbc6kNTnNgGSFtw6QNKEW4PbmNsMyLLmZuDsAAYVAA==",
+				},
+				{
+					enabled: false,
+					title: "15 Great Palace Complete",
+					data: "deflate:lcyxCsIwEAbgP9V4RaG6iGuhdGip1FDfwAfwLcTnaAZ1VMTlHJydHXwb9SncjPEGERfxOwj3J5fbwGIthV507ozcCKFHoiW0aIqGCIQSQAioV354r//BnxZYwet3McEU2GKPwKkdcMARJ1zQVrOPmquby5JMZ7omUw7LPLdfsRjUOvZsHN2cSYw2/m1cmcqU9jv60dSzaVTTlcllTAVTKqdh8nHINJY+Z6qYSrn8MWM5fG/mMI3wQGsJ3J8=",
+				},
+				{
+					title: "16 Final Boss",
+					uses: ["Boss"],
+					data: "deflate:rZK7TgJBFIb/M6MwwQRtbMUGWZdZXSa+gR0hMbGk5hl4gB0vsYQQmrWypiaWPIShho5noHA9OwUsYyyIfKf4L8nJnGKGsBi4wVn18yTOYiim7Cg5jh1HDukQDnIACqA8fzP5vtiTV7yBOT/FPR6AEd4hLytj4AMTTDHDF1ZoU4ceqUd9avPMaUVr1q5IxDKrB40rW5eJCJrhtQ1k3oWRbtqQbRTf3thILlKVhZSqFlK1UXjZ6yPOd0WFl3d61J4qz2PUEvH7Hv+av988zC2JaGitrZYFo40x1mxNqjTvGBQUXv5Xj4sX/hw/",
 				},
 			],
 		},

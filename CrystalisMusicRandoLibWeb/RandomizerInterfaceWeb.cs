@@ -11,10 +11,8 @@ public static partial class RandomizerInterfaceWeb
     static string _defaultErrorJson = RandoLib.CreateResultJson("failed to serialize error message JSON");
 
     [JSExport]
-    public static string TestInterop()
-    {
-        return "Success";
-    }
+    public static string GetBuildDate()
+        => RandoLib.GetBuildDate();
 
     [JSExport]
     public static string RandomizeRom(

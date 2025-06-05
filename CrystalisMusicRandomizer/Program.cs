@@ -13,6 +13,8 @@ internal class Program
 {
     static void Main(string[] args)
     {
+        Console.WriteLine($"Build date: {RandoLib.GetBuildDate()}");
+
         try
         {
             int argIdx = 0;
