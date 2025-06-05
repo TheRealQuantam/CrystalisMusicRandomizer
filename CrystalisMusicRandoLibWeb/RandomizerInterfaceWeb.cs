@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices.JavaScript;
+﻿using System.Reflection;
+using System.Runtime.InteropServices.JavaScript;
 using System.Runtime.Versioning;
 
 using RandoLib = CrystalisMusicRandoLib.RandomizerInterface;
@@ -11,8 +12,8 @@ public static partial class RandomizerInterfaceWeb
     static string _defaultErrorJson = RandoLib.CreateResultJson("failed to serialize error message JSON");
 
     [JSExport]
-    public static string GetBuildDate()
-        => RandoLib.GetBuildDate();
+    public static string GetVersion()
+        => RandoLib.GetVersion();
 
     [JSExport]
     public static string RandomizeRom(

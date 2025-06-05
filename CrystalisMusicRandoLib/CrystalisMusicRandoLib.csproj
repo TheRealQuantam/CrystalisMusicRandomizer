@@ -4,16 +4,20 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Deterministic>False</Deterministic>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <VersionSuffix>.*</VersionSuffix>
+    <Version>$(VersionPrefix)</Version>
+    <AssemblyVersion>$(VersionPrefix)$(VersionSuffix)</AssemblyVersion>
+    <FileVersion></FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Resources\BuildDate.txt" />
     <None Remove="Resources\crystalisft512kb.ips" />
     <None Remove="Resources\StandardLibrary.json5" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Resources\BuildDate.txt" />
     <EmbeddedResource Include="Resources\crystalisft512kb.ips" />
     <EmbeddedResource Include="Resources\StandardLibrary.json5" />
   </ItemGroup>
@@ -25,13 +29,5 @@
   <ItemGroup>
     <ProjectReference Include="..\FtRandoLib\FtRandoLib.csproj" />
   </ItemGroup>
-
-  <Target Name="PreBuild" BeforeTargets="PreBuildEvent" Condition=" '$(OS)' == 'Windows_NT' ">
-    <Exec Command="echo %25date%25 %25time%25 &gt; &quot;$(ProjectDir)\Resources\BuildDate.txt&quot;&#xD;&#xA;echo Generating $(ProjectDir)\Resources\BuildDate.txt (%25date%25 %25time%25)" />
-  </Target>
-
-  <Target Name="PreBuild" BeforeTargets="PreBuildEvent" Condition=" '$(OS)' == 'Linux' ">
-    <Exec Command="echo &quot;$(date '+%25Y-%25m-%25d %25H:%25M:%25S')&quot; &gt; &quot;$(ProjectDir)\Resources\BuildDate.txt&quot;&#xD;&#xA;echo &quot;Generating $(ProjectDir)\Resources\BuildDate.txt ($(date '+%25Y-%25m-%25d %25H:%25M:%25S'))&quot;" />
-  </Target>
 
 </Project>

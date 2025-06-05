@@ -18,15 +18,10 @@ public static class RandomizerInterface
         Formatting = Formatting.Indented,
     };
 
-    public static string GetBuildDate()
+    public static string GetVersion()
     {
-        using (var stream = OpenResource("Resources.BuildDate.txt"))
-        {
-            Debug.Assert(stream is not null);
-
-            using (var reader = new StreamReader(stream))
-                return reader.ReadToEnd();
-        }
+        var version = Assembly.GetExecutingAssembly().GetName().Version!;
+        return version.ToString();
     }
 
     public static (byte[] Rom, IEnumerable<int> FreeBanks, string Log) RandomizeRom(

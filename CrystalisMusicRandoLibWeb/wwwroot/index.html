@@ -7,7 +7,7 @@
 <body>
     <h1>Crystalis Music Randomizer</h1>
 
-    <div id="build_date"></div>
+    <div id="version"></div>
 
     <p>Basic usage:</p>
 
@@ -115,10 +115,10 @@
         const exports = await getAssemblyExports(config.mainAssemblyName);
         const randoLib = exports[config.mainAssemblyName].RandomizerInterfaceWeb;
 
-        const buildDateEl = document.getElementById("build_date");
+        const verEl = document.getElementById("version");
         const outEl = document.getElementById("output");
 
-        buildDateEl.innerText = "Build date: " + randoLib.GetBuildDate();
+        verEl.innerText = "Version " + randoLib.GetVersion();
 
        document.getElementById("generate").addEventListener("click", onGenerateClicked);
     </script>
