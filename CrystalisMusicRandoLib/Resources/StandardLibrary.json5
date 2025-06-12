@@ -1909,6 +1909,53 @@
 			],
 		},
 		{
+			title: "Dragon Warrior",
+			author: "Koichi Sugiyama",
+			primary_square_chan: 0,
+			items: [
+				{
+					title: "01 Title Theme",
+					uses: ["Credits"],
+					data: "deflate:ZVI9bNNAFH5nu03b6w+yoPZCG7m4aQ7Ll9SJm9oJEQjkmQExMGRD7Cx0YLH5GRk6dHDFhsTAiEQHqBgYOoBAYqASHcxPBpCg3RiKFN67BBZ0fnef3/u+796d/QYew2s14MTsDmcDgLkxmnhJh0kCM3yyNKYzsOhldnZmeppPTU1OTJTGx8cMQ9c0BotUohoVqUplqhOBGAzaioIcYhGPmMQlNvFJQRpSkY6UpCU16p/CDjyHl/AK9gDYHMZJjNMYAuMSxg2At/AB+BG7DfADfgFjnJ1ii6zKAtZhCbvMrrENtsW2cTxkz9S6zd6xfbUW7Ds7ZiVtmy1oK9o57Sqim9qG9kB7pNAL7b32TSFDn9dXdEIX9Sv6dYVSfUt/otCe/lH/iahkfN2EgW/6Rsp9z/OE50sfox6EQT2TnKquKbAqXNd1XOEJlziB9DOPF7ktDuHQ557pGR4f2fjCzwqvdwSW4K7pGi4XQwfhiKxwqdDfZIO6WT+gVZry4A67ewvm7zPYT62wFcVFJ7sg+4PzZreRWn49DLMilGEvtXDD3K7m9kpuV7K87Mi8vNRT6l1U17pLKe98Pob+oN3uZh0rkthTI8ZspLLr6+2siKwQvR3TaYz83NxeUAAfB18zRMnQEHf3a6tZEchPR8D7g4A3eRin1vJypZoVYpQVHA8fD9vBsCvo65A3RiUpWjLlSER1EGah1bQCq56g5ShbqwUZZixpyYQ6OoOi3PZyu4wndNHOxWQ1KaK4P4h5xFscLyOwwqRYxcwqp4FuvuUrOZ5gWd2Ro3wQiIzaaCGZxCHJm9hBgIkap1FI+f/m6l7w8VAtk45Sx7zDi2789x7WEK2hZcSLGKHkdR7E5OLn9lll5CgjnJfQpZwUsYxkGH/5jbc2/AUa2HlT+v9S+Deoz+KpvaWaxeib9GD3ngG1Pw==",
+				},
+				{
+					title: "02 Tantengel Castle Throne",
+					uses: ["Town"],
+					data: "deflate:dU49j9NAFJyXTex85woKoys4WRflnItXXjtv8UWI4xdQUPFXaK6wgZIGiQJLV1CAKOmghpaaConADzFvF8LHRafVzM7Ozuy+N3iG137hYPp+RC0wO3A0nYxHw0E/DHpd1SHEzptNp5PJeDwajYbDwaDfD8MwCHq9blcp1ekQ4Y5PScwFXdSHJe3yruE7UnI1V/RV6bq29F/gJS7xCqCZ4IbgRHAfeIt36N4LLoAP+IjP+IItWpCM+4AeCj8StPgqfKvjVCX8SaBVRT+ed9qYCzacca1nFR1atoU1ts5mOP/WRLF4TaRFNNG8iRKvV0209HrRREUTGc+ZZ+059bepN9nr01rO9Dh4coHziuLSllzmZW1VqTaqJEusDDEVaq149yX7t4Rzz38cvTvaf0zjx2LP2e7qdhOd/T+KS8ooGW3bmDY4w4YYazAZZDCk6WjPrcjo7222MiurjeYkzXiV10xNEAsMmiATmCuaZV8LXM6dj67Jnu5lK7VMFid1Eupw2x7+HseCYalAjkKGvLnnVlT8HdKyTuWNeX0sDy4EFr8+saIL2XNBcdUXzK/JHu9llypRi7CixHJhMl2nhLtPCfgJ",
+				},
+				{
+					title: "03 Tantengel Castle Courtyard",
+					uses: ["Town"],
+					data: "deflate:VY49TsNAEIXfhB8DMTEFxUqRCIqEED+x7JhZFsQxKCgoQJQU1BQRkg1cgHKriEvkOHAHKprwMpIRfKt5evNmtTu3uMSNHWz1Zl2ZA9nFQrKsRzZJSrpkg6yTNZKQVbJClskS6RAhuMI1IBlrG7jDPTq76QR4wCMaTPHO+sI3tS9TPEmNzzeZD7XSUgtt8qRG36uvfOmbIsHgI7ohs+hymuj2ojswfxzdofn96KroStPCNDcd2XRkoZo/atjjOX2ZYFBjGHzQMA6NlyDnEuChUkJRyYlo+6XaW9Sx6W+St63/E5a2lpoW7eg0urP/qyxucpUC2HkV4Ac=",
+				},
+				{
+					title: "04 Town",
+					uses: ["Town"],
+					data: "deflate:fU49jxNBDH1eJ3P5TooUCJprIpHN3EzMsCukXJQyf4B/kn+we0CJRAqKLUCUlFddgSipqakI6fgLEVo8q2vQKdh6Ho/9nu2PeIMPjWMyuutTDYwnMYyGg36v27kw7RYnhCdNbTQcDrTc63Y72jHtdkubCRGuY3ushEiJJKWp9XqRG9nKVzMmiqJMhWpJEtWqf4s93qMCaKyYKp4qtsAnfEZraXbALb7gG77jB074o3hMl3TCS8UJ7zR+bbLfGqfJCdukoOM+qZ2XPAulcCBHvl+QdT4LIqUneHBBP1Mn+cJJsD68WIQ0zMXLrLR0Y17t4C15cuw5DsjoUOdUexV6CnSsc870PdRCtYM6SVMsaG5TseKer9aV2ZSVSXEPqoxKeU0rzWb0b8dR9UhYmo2pnms5zsrykJVn1oOXHBSif6Vwxita66QNPdx55lTxzi+DRlv+qh1bTv933UVBqb1ayjO9qTI5V0YUjuFeE/AX",
+				},
+				{
+					title: "05 Overworld",
+					uses: ["Overworld"],
+					data: "deflate:HcwxbsJQDAbg/+ehNiIIGCp1IwyINDR1EnUrQhEQRe3AzNyZW+RBL1ApUw/RkUP0CAxwA9QLgF9kfbYH+88wRtoUBr2DzyvQ77rW6/od7/6ubVp4Qgywrx6AV8zQHnk1sMIaG3xiC4u9qvGj/VdZHNRfsx3VRf2j4vm7dQ1lKmEap2EmWZhMbUIEp9yUpvCXXDA3c8648/Y1goqRO5JnceJEbMY537gw+WPFJsAFOcmLBpXmw7z7BTXHLFmw4kQi/Y3EzbFMrLAMMPwicAM=",
+				},
+				{
+					title: "14 Battle Theme",
+					uses: ["Boss"],
+					data: "deflate:lZE/b9NAGMbf8584qa8JAysItXISJ64d/4vdBpWvwJhPkQmRigGhXChIUFWCgeFYEDMzrMzMTAyUbnwDFhSeO1xjRUICWc+r+909791z5zN6QM/1R9e6H1y2IertqdLrdnd3OXddd2en02m3HcdptWzbskzTNAzG6LZ2waaMyqrNcCu/6tA9aFJtqlG3old1o/8RrekpEetB16EjonN6Ra0TdpfoLb2j9/SRPtFn+koO6zCHLdg91IfQC/Ya9Tt0aNwxHPYMctgX1IGpRkvUN9BPc0WXL9nG84MoycvZ8azM4yjwt1j4c1qu6EJyT3Jf8kDySPJE8lzyUvKZ5Me6lnom1quBdv6HX8A6p5tPGM0926M+DchfYAcbIsn70ADyF+vW4xNqw7e4GLnffpCDZJvgIIzEpMYxWEQ1jsAirBHeiYibZhGStEaGtA6g2JVWav/hScUBxhGUgHPwEOMxFIJjcKh6oQxc2msDMZfRP0Ya+qOxCGpM0iwX0xrjJBUZ/T4xaCQYV4lScAEeNBI1E6eVX/Gk4qmd1/tP9AF/wwgs0hrxeLFImqsiQTavyhZh76R6vebr7BvVi4KzLVZZ9zD21R7gyL467nKT5dNiZZZpWWTFNJ3mSZ7F4Xjo9W/c2u8L39y+9QozM/wAXY/wLroe4sK6Yj7XtbhazZAPzThVWn1kQASMBW5h0v1Tk+gX",
+				},
+				{
+					title: "15 Final Boss Theme",
+					uses: ["Dungeon", "Draygon"],
+					data: "deflate:fZC9TgJBFIXP3dkfYJcFE2MDxgRYd9hZd6Oh9BGM4U0IFT2jljYkFmIsLDSWWmltbW0L2voAdjgzmjUmQCb3zMnkOzmZe4dz3JqDevjk0wKo1bWE1cCvlEue69jMIrT0Wy0Mq9Ug8H2/UimXSyXP81zXcWybMWZZRDg0lMI0qFEDK1rzOmEyKqRjOmiiKqvTKn+BS1zjBqCamk01XM0xcI8H2B23DzzjBa94wxwb1KMBDWlEV/So3IA+qWn1jDuyRuZtaI1pPrEWrc4EWgo3xofSKJbcEeDIaA8CCXH64bcbitpq/Lmd5u+RTYXMpkE8DaJlKqYBX6pSXYT2iXvaRzshwYpGJCLhMqZIWx5Hctbx3r/AxlS0/mtfU7K2fM0qdnlXyNTJkeKA9pGrhaSrVrFydRnlrMgiy7NUCupqm4qunHHzKbTOCPgG",
+				},
+				{
+					title: "16 Ending Theme",
+					uses: ["Credits"],
+					data: "deflate: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",
+				},
+			],
+		},
+		{
 			title: "Final Fantasy",
 			author: "Nobuo Uematsu",
 			streaming_safe: false,
