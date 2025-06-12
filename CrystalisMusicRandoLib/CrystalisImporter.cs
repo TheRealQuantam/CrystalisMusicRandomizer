@@ -122,9 +122,12 @@ internal class CrystalisImporter : Importer
         "Ending Part 1",
         "Ominous Introduction",
         "Activation",
+        "Town 2",
         "Town 3",
         "Town 4",
+        "Town 5",
         "Boss 2",
+        "Boss 3",
     ];
     static Dictionary<string, int[]> UsesSongIndices = new()
     {
@@ -133,8 +136,8 @@ internal class CrystalisImporter : Importer
         { "Sea", [6] },
         { "Draygon", [0xc] },
         { "Mesia", [0x1b] },
-        { "Town", [/*0xd,*/ 0x16, 0x20, 0x21] },
-        { "Boss", [0x14, 0x12, 0x22] },
+        { "Town", [/*0xd,*/ 0x16, 0x20, 0x21, 0x22, 0x23] },
+        { "Boss", [0x14, 0x12, 0x24, 0x25] },
         { "Credits", [0x1c] },
     };
 
