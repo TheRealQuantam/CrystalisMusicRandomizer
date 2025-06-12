@@ -84,9 +84,20 @@
             if (!res.errorMessage) {
                 text = resJson;
 
+                const extIdx = file.name.lastIndexOf(".");
+                let stem = file.name;
+                if (extIdx >= 0)
+                    stem = stem.substring(0, extIdx)
+
+                const flagsStr = (includeBuiltin ? "B" : "")
+                    + (includeStandardLibrary ? "S" : "")
+                    + (includeDiverse ? "D" : "")
+                    + (includeUnsafe ? "U" : "");
+                const outPath = `${stem} Music ${flagsStr} ${seed}.nes`;
+
                 const link = document.createElement("a");
                 link.href = `data:application/octet-stream;base64,${res.rom}`;
-                link.download = "out.nes";
+                link.download = outPath;
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
