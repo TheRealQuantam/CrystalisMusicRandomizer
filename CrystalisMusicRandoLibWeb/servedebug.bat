@@ -1,0 +1,1 @@
+dotnet serve -d bin\Debug\net8.0-browser\wwwroot -o

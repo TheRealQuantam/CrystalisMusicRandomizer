@@ -126,6 +126,7 @@ internal class CrystalisImporter : Importer
         "Town 3",
         "Town 4",
         "Town 5",
+        null, // For some reason the randomizer uses this to stop music for stats
         "Boss 2",
         "Boss 3",
     ];
@@ -137,7 +138,7 @@ internal class CrystalisImporter : Importer
         { "Draygon", [0xc] },
         { "Mesia", [0x1b] },
         { "Town", [/*0xd,*/ 0x16, 0x20, 0x21, 0x22, 0x23] },
-        { "Boss", [0x14, 0x12, 0x24, 0x25] },
+        { "Boss", [0x14, 0x12, 0x25, 0x26] },
         { "Credits", [0x1c] },
     };
 
